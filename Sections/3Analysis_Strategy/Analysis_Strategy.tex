@@ -12,7 +12,7 @@ are defined as the selected  D meson candidates ($\Dzero$, $\Dplus$ and $\Dstar$
 within a given $\pt^{\rm trig}$ range. The detection strategy for D mesons at central rapidity is
 the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2016 pp and 2016 p-Pb samples (\cite{Notepp}, \cite{NotepPb}). It is based on the reconstruction of decay
 vertices displayed from the primary vertex by a few hundred $\mu$m and on the identification of the decay-particle species.
-The identification of the charged kaon and pion in the TPC and TOF detectors is also used, to further reduce the background at low $\pt$.  An invariant-mass analysis is then used to extract the raw signal yield, using the same fit functions described in~\cite{ALICEDhcorr}.
+The identification of the charged kaon and pion in the TPC and TOF detectors is also used, to further reduce the background at low $\pt$. An invariant-mass analysis is then used to extract the raw signal yield, using the same fit functions described in~\cite{ALICEDhcorr}.
 The D mesons are selected in the rapidity range varying from $|y|<0.5$ at low $\pt$ to $|y|<0.8$ for $\pt>5~\gev/c$. %The final results are corrected to have D mesons within $|y|<0.5$.
 
 \item
@@ -110,7 +110,6 @@ The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the vario
 
 \begin{figure}[!htp]
 \centering
-{\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins3to3.png}}
 {\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins4to5.png}}
 {\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins6to8.png}}
 \end{figure}
@@ -137,7 +136,6 @@ The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the vario
 
 \begin{figure}[h]
 \centering
-{\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins2to2.png}}
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins3to4.png}}
 {\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins5to7.png}}
 \end{figure}
@@ -167,6 +165,26 @@ In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown 
 \caption{$\Dzero$-h correlation distributions with different cut options (left) and point-by-point relative statistical uncertainty (right) for $3< p_{T}^{\text{D}}< 5$ $\gev/c$ (top), $5< p_{T}^{\text{D}}< 8$ $\gev/c$ (middle), $8< p_{T}^{\text{D}}< 16$ $\gev/c$ (bottom), in all cases with associated track $\pt$ $> 0.3$ $\gev/c$.}
 \label{fig:cutoptD0}
 \end{figure}
+
+\subsubsection{Extension to very low $pt$(D) bin}
+
+Thanks to the higher statitistics of 2017 pp data sample, we tried to enlarge our analysis to very low $\pt$ bin of the D mesons.
+Indeed, Figure \ref{fig:veryLowPt} shows the good performance in the extraction of the invariant mass distribution for $2< p_{T}^{\text{D}}< 3$ for all the 3 D-mesons. 
+
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=0.94\textwidth]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins2to2.png}}
+{\includegraphics[width=0.94\textwidth]{figures/Dzero/InvMassDistributions_Dzero_Bins3to3.png}}
+{\includegraphics[width=1\linewidth, height=5.6cm]{figures/DStar_pp/InvMassDistributions_Dstar_Bins1to1.png}}
+\label{fig:veryLowPt}
+\end{figure}
+
+The possibility to exploit this $\pt$ range was of high interest for the jet structure characterization. Indeed it could give us the possibility to investigate $\pt$ bins in which the trigger particle has compatible or even lower momentum with respect to the associated particle. And this could enhance our sensitivity to the LO or NLO production processes. In fact, for example for $\pt (D)\sim \pt(ass)$, at the LO production process, we don't expect any peak on the near-side region (due to the high momentum of the jet-trigger particle), but a peak could arise from NLO process.
+
+Despite the good statistics available, it wasn't enough for our analysis .The correlation distributions at very low $\pt$ didn't show a good performance and most of the fit failed, expecially on the away-side region which was affected by high fluctuations. For this reason, we decided to drop the studies at very-low $\pt$ of the trigger particles.
+
+
 
 \subsection{Code used for the analysis}
 The code used for D meson-hadron correlation analysis is fully committed in AliPhysics. The analysis classes can be found in
